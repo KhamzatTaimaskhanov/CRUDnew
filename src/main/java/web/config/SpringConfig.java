@@ -80,7 +80,7 @@ public class SpringConfig implements WebMvcConfigurer {
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("ru.savinov.web.models");
+        em.setPackagesToScan("web.models");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
